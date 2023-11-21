@@ -1,0 +1,12 @@
+<div class="bottom-sheet" [ngClass]="isBottomSheetVisible ? '' : 'hidden'">
+  <div class="clickable-handle">
+    <button class="handle" (click)="toggleBottomSheet()">
+      <mat-icon>drag_handle</mat-icon>
+    </button>
+  </div>
+  <div class="bottom-sheet-content">
+    <div class="content">
+      <ng-content />
+    </div>
+  </div>
+</div>

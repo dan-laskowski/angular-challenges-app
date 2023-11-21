@@ -1,0 +1,11 @@
+<app-popup (close)="onCloseModal()" [@fadeInOut]="isOpen ? 'open' : 'close'">
+  <div class="modal-content">
+    <img src="../assets/meme.jpg" alt="professor" />
+    <p>Please close it right now.</p>
+    <button autofocus (click)="onCloseModal()">Do it</button>
+  </div>
+</app-popup>
+
+<main>
+  <button (click)="onOpenModal()">Open modal</button>
+</main>

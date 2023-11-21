@@ -7,6 +7,9 @@ import { RatingViewComponent } from './components/5-stars/rating-view/rating-vie
 import { SortViewComponent } from './components/6-sort/sort-view/sort-view.component';
 import { FormComponent } from './components/7-form/form/form.component';
 import { FormGuard } from './shared/guards/form.guard';
+import { BottomSheetComponent } from './components/8-bottomsheet/bottom-sheet/bottom-sheet.component';
+import { LoaderViewComponent } from './components/9-loader/loader-view/loader-view.component';
+import { PopupViewComponent } from './components/10-popup/popup-view/popup-view.component';
 
 export const routes: Routes = [
   {
@@ -37,5 +40,17 @@ export const routes: Routes = [
     path: 'challenge-7',
     component: FormComponent,
     canDeactivate: [FormGuard],
+  },
+  {
+    path: 'challenge-8',
+    component: BottomSheetComponent,
+  },
+  {
+    path: 'challenge-9',
+    component: LoaderViewComponent,
+  },
+  {
+    path: 'challenge-10',
+    component: PopupViewComponent,
   },
 ];

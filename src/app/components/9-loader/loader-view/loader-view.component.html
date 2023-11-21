@@ -1,0 +1,13 @@
+<main>
+  <app-loader [loaderState]="loaderState" [spinnerText]="spinnerText" />
+  @if(loaderState === LOADER_STATE.isReady) {
+  <section class="content">
+    <h1>Main content</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae animi
+      architecto, dolorem quos eius nam autem eaque est cumque iusto dolorum,
+      ullam saepe error! Saepe voluptatem a magnam sunt labore.
+    </p>
+  </section>
+  }
+</main>
