@@ -1,0 +1,46 @@
+.card-wrapper {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #fbecb2;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  color: #3876bf;
+  min-height: 30vh;
+  max-width: 340px;
+  -webkit-box-shadow: 8px 8px 24px -9px rgba(251, 236, 178, 1);
+  -moz-box-shadow: 8px 8px 24px -9px rgba(251, 236, 178, 1);
+  box-shadow: 8px 8px 24px -9px rgba(251, 236, 178, 1);
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+.card-subtitle {
+  font-size: 1.25rem;
+}
+
+.card-body {
+  font-family: "Edu TAS Beginner", cursive;
+  font-size: 0.8rem;
+  align-self: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.75rem;
+  color: #e1aa74;
+}
+
+h1,
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+}

@@ -1,0 +1,10 @@
+<section class="card-wrapper">
+  <h1 class="card-title">{{ title }}</h1>
+  <h2 class="card-subtitle">{{ subtitle }}</h2>
+  <div class="card-body"><ng-content /></div>
+  @if(footer) {
+  <footer class="card-footer">
+    <p class="footer-text">{{ footer }}</p>
+  </footer>
+  }
+</section>

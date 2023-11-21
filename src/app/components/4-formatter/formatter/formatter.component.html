@@ -1,0 +1,37 @@
+<section class="formatter-wrapper">
+  <label class="label" for="cardnumber"
+    >Podaj numer karty<input
+      id="cardnumber"
+      type="text"
+      maxlength="16"
+      class="formatter-input"
+      oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+      [(ngModel)]="cardNumber"
+    />
+    @if(cardNumber.length < 16) {
+    <p class="formatter-text error">Credit card number is too short</p>
+    }</label
+  >
+
+  @if(cardNumber.length === 16) {
+  <div class="creditcard-wrapper">
+    <img
+      class="creditcard-chip"
+      src="../../../../assets/chip.png"
+      alt="credit card chip"
+      width="62px"
+    />
+    <p class="creditcard-bankname">BANKO</p>
+    <p class="creditcard-number">{{ cardNumber | cardformat }}</p>
+    <p class="creditcard-valid">GOOD THRU</p>
+    <p class="creditcard-date">12/22</p>
+    <p class="creditcard-recipient">Johny Dought</p>
+    <img
+      class="creditcard-logo"
+      src="../../../../assets/paywave.png"
+      alt="paywave logo"
+      width="24px"
+    />
+  </div>
+  }
+</section>

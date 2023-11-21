@@ -1,0 +1,15 @@
+<section class="app-wrapper">
+  @if(isArray) {
+  <p>
+    Array to sort: <span><br />{{ arrayToSort }}</span>
+  </p>
+  <p>
+    Array sorted asc: <span><br />{{ arrayToSort | sort }}</span>
+  </p>
+  <p>
+    Array sorted desc: <span><br />{{ arrayToSort | sort : "desc" }}</span>
+  </p>
+  } @else {
+  <p class="error">Value to sort isn’t an array</p>
+  }
+</section>

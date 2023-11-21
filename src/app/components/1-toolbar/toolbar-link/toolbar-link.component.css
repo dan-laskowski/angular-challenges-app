@@ -1,0 +1,9 @@
+.navbar-link {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+a {
+  color: #ffc436;
+  text-decoration: none;
+}

@@ -1,0 +1,5 @@
+<app-toolbar title="Coolbar">
+  @for(link of links; track link.id) {
+  <app-toolbar-link [location]="link.location" [name]="link.name" />
+  }
+</app-toolbar>

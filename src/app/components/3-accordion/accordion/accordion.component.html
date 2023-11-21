@@ -1,0 +1,17 @@
+<section class="accordion-wrapper">
+  <div class="title">
+    <h1 class="accordion-title">{{ title | uppercase }}</h1>
+    <button class="accordion-switch" (click)="switchBodyVisibility()">
+      <img
+        [ngClass]="isBodyVisible ? 'arrow-bottom' : ''"
+        src="../../../../assets/arrow.svg"
+        alt="arrow"
+        width="24px"
+        height="24px"
+      />
+    </button>
+  </div>
+  <p class="accordion-body" [ngClass]="isBodyVisible ? '' : 'no-body'">
+    {{ body }}
+  </p>
+</section>

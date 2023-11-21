@@ -1,0 +1,18 @@
+<section>
+  <h2>ACCOUNT FORM</h2>
+  <form
+    class="form-wrapper"
+    [formGroup]="profileForm"
+    (ngSubmit)="handleSubmit()"
+  >
+    <label>
+      Name
+      <input type="text" formControlName="name" />
+    </label>
+    <label>
+      Email
+      <input type="email" formControlName="email" />
+    </label>
+    <button type="submit">Send</button>
+  </form>
+</section>
