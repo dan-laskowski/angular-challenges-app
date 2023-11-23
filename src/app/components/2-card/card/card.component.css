@@ -4,43 +4,50 @@
   width: fit-content;
   flex-direction: column;
   align-items: center;
-  border-radius: 6px;
-  background-color: #fbecb2;
-  padding: 1rem;
+  justify-content: center;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 4rem;
   margin: 1rem;
   margin-bottom: 3rem;
-  color: #3876bf;
-  min-height: 30vh;
-  max-width: 340px;
-  -webkit-box-shadow: 8px 8px 24px -9px rgba(251, 236, 178, 1);
-  -moz-box-shadow: 8px 8px 24px -9px rgba(251, 236, 178, 1);
-  box-shadow: 8px 8px 24px -9px rgba(251, 236, 178, 1);
+  color: #4871cd;
+  max-width: 30vw;
 }
 
 .card-title {
-  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 3rem;
 }
 
 .card-subtitle {
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
 .card-body {
-  font-family: "Edu TAS Beginner", cursive;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 1.75rem;
   align-self: flex-start;
   margin-top: 1rem;
   margin-bottom: 3rem;
+  max-width: 500px;
+  align-self: center;
 }
 
 .card-footer {
   position: absolute;
-  bottom: 10px;
+  bottom: 2rem;
   font-size: 0.75rem;
-  color: #e1aa74;
-}
-
-h1,
-h2 {
-  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
 }

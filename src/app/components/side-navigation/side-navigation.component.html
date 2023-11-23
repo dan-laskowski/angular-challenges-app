@@ -1,18 +1,13 @@
 <ul class="challenge-nav">
-  @for(route of challengeRoutes; track route.path) {
+  @for(route of challengeRoutes; track route.path) { @if(route.path){
   <li>
     <a
       class="challenge-link"
       [routerLink]="route.path"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
-      >{{ route.path | sentence
-      }}<img
-        src="../../../assets/circle-solid.svg"
-        class="challenge-img"
-        alt="triangle"
-        width="18px"
-    /></a>
+      >{{ route.path | sentence }}</a
+    >
   </li>
-  }
+  } }
 </ul>

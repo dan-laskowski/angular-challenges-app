@@ -34,7 +34,7 @@
   position: relative;
   width: 290px;
   height: 180px;
-  background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
+  /* background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%); */
   border-radius: 8px;
   -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.3);
   -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.3);

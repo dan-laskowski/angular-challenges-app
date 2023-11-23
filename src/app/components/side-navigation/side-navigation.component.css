@@ -6,16 +6,18 @@
 
 .challenge-link {
   text-transform: capitalize;
-  border-bottom: 1px solid lightgray;
+  /* border-bottom: 1px solid #e7dfed; */
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
+  font-weight: 400;
   width: 100%;
   text-align: center;
-  color: black;
+  color: #14131f;
   padding: 0 14px;
   transition: transform 0.2s;
   padding: 20px;
+  transition: padding-left 0.4s;
 }
 
 img {
@@ -23,9 +25,10 @@ img {
 }
 
 .active {
-  border-left: 6px solid black;
-  padding-left: 14px;
+  /* border-left: 6px solid #14131f; */
+  padding-left: 36px;
   font-weight: 600;
+  transition: padding-left 0.2s;
 }
 
 .active img {

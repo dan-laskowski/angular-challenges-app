@@ -1,20 +1,30 @@
+* {
+  text-decoration: none;
+  color: #4871cd;
+}
+
 .header-wrapper {
   position: sticky;
-  height: 80px;
+  height: 140px;
   width: 100%;
-  background-color: #0c356a;
-  color: #ffc436;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.25rem 6%;
 }
 
-.navbar-list {
-  list-style-type: none;
+.header-title a h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 4rem;
+  text-decoration: none;
 }
 
-h1 {
-  color: #ffc436;
-  text-decoration: none;
+.navbar-list {
+  list-style-type: none;
 }

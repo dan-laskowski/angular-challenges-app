@@ -1,11 +1,24 @@
+.main-background {
+  width: 100vw;
+  height: 100dvh;
+  background: bottom left no-repeat url(../assets/background.png);
+  position: absolute;
+}
 .container {
   height: 100dvh;
+  background: transparent;
 }
 
 .side-container {
   width: 400px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .main-content {
-  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  background: transparent;
 }
