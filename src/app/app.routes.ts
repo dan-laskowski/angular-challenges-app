@@ -10,8 +10,10 @@ import { FormGuard } from './shared/guards/form.guard';
 import { BottomSheetComponent } from './components/8-bottomsheet/bottom-sheet/bottom-sheet.component';
 import { LoaderViewComponent } from './components/9-loader/loader-view/loader-view.component';
 import { PopupViewComponent } from './components/10-popup/popup-view/popup-view.component';
+import { HomeComponent } from './components/home/home.component';
 
 export const routes: Routes = [
+  { path: 'home', component: HomeComponent },
   {
     path: 'challenge-1',
     component: ToolbarViewComponent,
@@ -53,4 +55,5 @@ export const routes: Routes = [
     path: 'challenge-10',
     component: PopupViewComponent,
   },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];

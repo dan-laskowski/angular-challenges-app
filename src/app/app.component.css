@@ -1,5 +1,9 @@
-.example-container {
+.container {
   height: 100dvh;
+}
+
+.side-container {
+  width: 400px;
 }
 
 .main-content {
