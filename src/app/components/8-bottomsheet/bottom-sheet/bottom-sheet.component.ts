@@ -10,7 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './bottom-sheet.component.css',
 })
 export class BottomSheetComponent {
-  isBottomSheetVisible: boolean = true;
+  isBottomSheetVisible: boolean = false;
 
   toggleBottomSheet() {
     this.isBottomSheetVisible = !this.isBottomSheetVisible;

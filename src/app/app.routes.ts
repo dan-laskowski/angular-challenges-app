@@ -11,6 +11,7 @@ import { BottomSheetComponent } from './components/8-bottomsheet/bottom-sheet/bo
 import { LoaderViewComponent } from './components/9-loader/loader-view/loader-view.component';
 import { PopupViewComponent } from './components/10-popup/popup-view/popup-view.component';
 import { HomeComponent } from './components/home/home.component';
+import { BottomSheetViewComponent } from './components/8-bottomsheet/bottom-sheet-view/bottom-sheet-view.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -45,7 +46,7 @@ export const routes: Routes = [
   },
   {
     path: 'challenge-8',
-    component: BottomSheetComponent,
+    component: BottomSheetViewComponent,
   },
   {
     path: 'challenge-9',

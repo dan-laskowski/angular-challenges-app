@@ -9,6 +9,10 @@
   margin: 1rem 0;
 }
 
+.loader-text {
+  font-size: 1.25rem;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);

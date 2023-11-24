@@ -34,7 +34,7 @@ const fadeInOut = trigger('fadeInOut', [
 export class PopupViewComponent {
   title = '10-popup';
 
-  isOpen: boolean = true;
+  isOpen: boolean = false;
 
   onOpenModal() {
     this.isOpen = true;

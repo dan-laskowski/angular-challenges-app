@@ -2,39 +2,79 @@
   font-family: "Roboto", sans-serif;
 }
 
-.formatter-wrapper {
+.formatter-view {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100dvh;
+}
+
+.formatter-form {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 580px;
+}
+
+.input-wrapper {
+  font-family: "Montserrat", sans-serif;
+  min-height: 170px;
+}
+
+.label {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .formatter-input {
   font-family: "Montserrat", sans-serif;
-  width: 180px;
+  font-size: 1.5rem;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.7px);
+  -webkit-backdrop-filter: blur(4.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px;
+  margin-top: 1rem;
+  outline: none;
 }
 
-.label {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.formatter-input:focus {
+  outline: 2px solid #4871cd;
 }
 
 .error {
   color: red;
   font-size: bold;
-  font-size: 0.6rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 4px;
+  margin-top: 0.5rem;
 }
 
 .creditcard-wrapper {
-  margin-top: 40px;
+  margin-top: 4rem;
   position: relative;
   width: 290px;
   height: 180px;
-  /* background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%); */
+  background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
   border-radius: 8px;
   -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.3);
   -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.3);
@@ -102,4 +142,25 @@
   position: absolute;
   top: 14px;
   left: 12px;
+}
+
+.creditcard-questionmark {
+  position: absolute;
+  top: 52px;
+  left: 121px;
+  animation: 1s pulse infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
 }

@@ -8,10 +8,6 @@ main {
   z-index: 1;
 }
 
-main button {
-  background-color: #daae51;
-}
-
 .modal-content {
   display: flex;
   flex-direction: column;
@@ -21,8 +17,17 @@ main button {
 .modal-content button,
 p {
   margin-top: 2rem;
+  font-size: 1.25rem;
 }
 
 button {
   width: fit-content;
+  background-color: #4871cd;
+  border: none;
+  transition: 0.2s;
+  color: #faf3f0;
+  text-transform: uppercase;
+  padding: 0.75rem 3rem;
+  border-radius: 16px;
+  margin-top: 2rem;
 }

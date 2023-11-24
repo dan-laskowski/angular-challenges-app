@@ -1,16 +1,27 @@
 <section class="rating-wrapper">
   @for(rate of rateArray; track rate) { @if(currentRate ===0 || currentRate <=
   rate) {
-  <img src="../../../../assets/star-empty.svg" alt="empty star" width="24px" />
+  <img
+    src="../../../../assets/star-empty.svg"
+    alt="empty star"
+    width="54px"
+    height="48px"
+  />
 
   } @else if(currentRate > rate && currentRate-rate === 0.5) {
   <img
     src="../../../../assets/star-half-solid.svg"
     alt="solid star"
-    width="24px"
+    width="54px"
+    height="48px"
   />
 
   } @else {
-  <img src="../../../../assets/star-solid.svg" alt="half star" width="24px" />
+  <img
+    src="../../../../assets/star-solid.svg"
+    alt="half star"
+    width="54px"
+    height="48px"
+  />
   } }
 </section>
