@@ -1,10 +1,15 @@
 <main class="main-background">
   <mat-drawer-container class="container">
-    <mat-drawer class="side-container" mode="side" opened
+    <mat-drawer class="glass-card side-container" mode="side" opened
       ><app-side-navigation
     /></mat-drawer>
-    <mat-drawer-content class="main-content"
-      ><router-outlet
+    <mat-drawer-content class="main-content">
+      @if(challengeNumber) {
+      <app-challenge
+        [title]="challenges[challengeNumber - 1].title"
+        [description]="challenges[challengeNumber - 1].description" />
+      }
+      <router-outlet
     /></mat-drawer-content>
   </mat-drawer-container>
 </main>

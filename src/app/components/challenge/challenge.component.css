@@ -1,0 +1,18 @@
+.challenge-wrapper {
+  max-height: 18dvh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  border-left: none;
+}
+
+.text-wrapper {
+  padding: 2rem;
+  max-width: 1000px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}

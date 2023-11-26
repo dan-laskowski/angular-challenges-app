@@ -9,11 +9,11 @@
   /* border-bottom: 1px solid #e7dfed; */
   display: flex;
   justify-content: space-between;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   width: 100%;
   text-align: center;
-  color: #4871cd;
+  color: var(--main-color);
   padding: 0 14px;
   transition: transform 0.2s;
   padding: 20px;

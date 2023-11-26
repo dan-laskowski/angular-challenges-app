@@ -1,22 +1,17 @@
 * {
   text-decoration: none;
-  color: #4871cd;
+  color: var(--main-color);
 }
 
 .header-wrapper {
   position: sticky;
   height: 140px;
   width: 100%;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.25rem 6%;
+  margin-top: 6rem;
 }
 
 .header-title a h1 {
