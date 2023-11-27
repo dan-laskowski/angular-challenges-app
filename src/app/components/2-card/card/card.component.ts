@@ -11,5 +11,6 @@ import { CommonModule } from '@angular/common';
 export class CardComponent {
   @Input() title: string = 'Default title';
   @Input() subtitle: string = 'Default subtitle';
+  @Input() imgSrc?: string = '';
   @Input() footer?: string = '';
 }

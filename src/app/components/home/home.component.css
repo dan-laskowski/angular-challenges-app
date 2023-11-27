@@ -2,10 +2,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100dvh;
 }
 
-.repo {
+.content-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
+}
+
+.codecademy-logo {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3.25rem;
+  color: #204156;
+  margin-bottom: 2rem;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.link-wrapper img {
+  margin-right: 1rem;
 }

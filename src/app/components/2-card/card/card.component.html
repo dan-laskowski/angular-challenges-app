@@ -1,6 +1,9 @@
 <section class="card-wrapper glass-card">
   <h1 class="card-title">{{ title }}</h1>
   <h2 class="card-subtitle">{{ subtitle }}</h2>
+  @if(imgSrc) {
+  <img [src]="imgSrc" alt="" width="24px" />
+  }
   <div class="card-body"><ng-content /></div>
   @if(footer) {
   <footer class="card-footer">
