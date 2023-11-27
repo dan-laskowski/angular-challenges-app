@@ -30,6 +30,10 @@ a {
   margin-top: 1.5rem;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .link-wrapper img {
   margin-right: 1rem;
 }
